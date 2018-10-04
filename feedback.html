@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Отзыв о Седоне и гостиниц в ней</title>
+    <meta name="description" content="Он-лайн сервис поиска гостиниц в Седоне">
+    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="css/feedback.css">
+    <script>document.createElement( "picture" );</script>
+    <script src="js/vendor/picturefill.js" async></script>
+  </head>
+  <body>
+    <div class="wrap-content">
+<header class="page-header">
+  <h1 class="visuallyhidden">Онлайн бронирование гостиниц в Седоне</h1>
+  <button class="menu-toggle" type="button" aria-label="Открыть/закрыть меню"><span class="menu-toggle__top-line"></span><span class="menu-toggle__middle-line"></span><span class="menu-toggle__bottom-line"></span></button>
+  <nav class="main-nav">
+    <h2 class="visuallyhidden">Навигация по сайту</h2>
+    <ul class="main-nav__list">
+      <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a>
+      </li>
+      <li class="main-nav__item"><a class="main-nav__link" href="foto-video.html">Фото и видео</a>
+      </li>
+      <li class="main-nav__item"><a class="main-nav__link" href="feedback.html">Форма отзыва</a>
+      </li>
+      <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+      </li>
+    </ul>
+  </nav><a class="logo" href="/">
+    <picture>
+      <source type="image/webp" srcset="img/webp/page-header/logo-1200.webp" media="(min-width: 1200px)">
+      <source type="image/webp" srcset="img/webp/page-header/logo-768.webp" media="(min-width: 768px)">
+      <source type="image/webp" srcset="img/webp/page-header/logo-320.webp">
+      <source srcset="img/page-header/logo-1200.png" media="(min-width: 1200px)">
+      <source srcset="img/page-header/logo-768.png" media="(min-width: 768px)"><img src="img/page-header/logo-320.png" alt="Логотип онлайн сервиса поиска гостиниц в Седоне">
+    </picture></a>
+</header>
+      <main>
+<section class="main-intro feedback-intro">
+  <h2 class="visuallyhidden">Фотографии и&nbsp;видео парка</h2>
+  <picture class="main-intro__img">
+    <source type="image/webp" srcset="img/webp/photo-video/sedona-photo-1200.webp" media="(min-width: 800px)">
+    <source type="image/webp" srcset="img/webp/photo-video/sedona-photo-768.webp" media="(min-width: 425px)">
+    <source type="image/webp" srcset="img/webp/photo-video/sedona-photo-320.webp">
+    <source srcset="img/photo-video/sedona-photo-1200.jpg" media="(min-width: 800px)">
+    <source srcset="img/photo-video/sedona-photo-768.jpg" media="(min-width: 425px)"><img src="img/photo-video/sedona-photo-320.jpg" alt="Горный пейзаж Седоны">
+  </picture>
+  <div class="main-intro__introduction feedback-intro__introduction">
+    <p class="main-intro__title feedback-intro__title"><strong>Оставьте свой отзыв</strong></p>
+    <p class="main-intro__subtitle feedback__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных вами достопримечательностях</p>
+  </div>
+</section>
+<form class="feedback-form" method="post" action="/feedback">
+  <fieldset class="full-name-wrp"><b class="legend">Представьтесь:</b>
+    <div class="name-wrp">
+      <label for="first-name">Имя*:</label>
+      <div class="name-input-wrp">
+        <input id="first-name" type="text" name="first-name" placeholder="Петр" required>
+      </div>
+    </div>
+    <div class="surname-wrp">
+      <label for="surname">Фамилия*:</label>
+      <div class="surname-input-wrp">
+        <input id="surname" type="text" name="surname" placeholder="Иванов" required>
+      </div>
+    </div>
+    <div class="patronymic-wrp">
+      <label for="patronymic">Отчество</label>
+      <div class="patronymic-input-wrp">
+        <input id="patronymic" type="text" name="patronymic" placeholder="Александрович">
+      </div>
+    </div>
+  </fieldset>
+  <fieldset class="contacts-wrp"><b class="legend">Контактная информация:</b>
+    <div class="phone-wrp">
+      <label for="phone"><span>Контактный </span><span>телефон*:</span></label>
+      <div class="phone-input-wrp">
+        <input id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
+        <div class="phone-svg-wrp">
+          <svg class="phone-svg">
+            <use xlink:href="img/sprite/vector-sprite.svg#telephone"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="mail-wrp">
+      <label for="mail">Электронная почта*:</label>
+      <div class="main-input-wrp">
+        <input id="mail" type="email" name="mail" placeholder="Введите e-mail" required>
+        <div class="mail-svg-wrp">
+          <svg class="mail-svg">
+            <use xlink:href="img/sprite/vector-sprite.svg#envelope"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset class="impression-wrp"><b class="legend">Ваше общее впечатление:</b>
+    <div class="positively-wrp">
+      <input id="positively" type="radio" name="impression" checked>
+      <label for="positively">Скорее положительное</label>
+    </div>
+    <div class="negative-wrp">
+      <input id="negative" type="radio" name="impression">
+      <label for="negative">Скорее отрицательное</label>
+    </div>
+    <div class="neutral-wrp">
+      <input id="neutral" type="radio" name="impression">
+      <label for="neutral">Затрудняюсь ответить</label>
+    </div>
+  </fieldset>
+  <fieldset class="attractions-wrp"><b class="legend">Посещенные достопримечательности:</b>
+    <div class="attractions-inner-wrp">
+      <div class="devil-bridge-wrp attraction-item">
+        <input id="devil-bridge" type="checkbox" name="devil-bridge" checked>
+        <label for="devil-bridge">Мост Дьявола</label>
+      </div>
+      <div class="slide-park-wrp attraction-item">
+        <input id="slide-park" type="checkbox" name="slide-park" checked>
+        <label for="slide-park">Слайд-парк</label>
+      </div>
+      <div class="mountain-bell-wrp attraction-item">
+        <input id="mountain-bell" type="checkbox" name="mountain-bell">
+        <label for="mountain-bell">Гора-Колокол</label>
+      </div>
+      <div class="red-rocks-wrp attraction-item">
+        <input id="red-rocks" type="checkbox" name="red-rocks" checked>
+        <label for="red-rocks">Красные скалы</label>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset class="emotions-wrp"><b class="legend">Опишите свои эмоции:</b>
+    <textarea class="emotions" id="emotions" name="emotions" aria-label="Опишите свои эмоции" placeholder="Опишите подробно все свои восторги"></textarea>
+  </fieldset>
+  <button class="button button-form" type="submit">Отправить отзыв</button><span class="required-fields">* &mdash; Обязательные поля</span>
+  <div class="preloader-wrp preloader-wrp--hide">
+    <div class="preloader"><span></span><span></span><span></span></div>
+  </div>
+</form>
+      </main>
+<footer class="page-footer"><b class="page-footer__hashtag">#VISITSEDONA</b>
+  <ul class="social">
+    <li class="social__item"><a class="social__link social__link-twitter" href="#">Twitter
+        <svg class="social__twitter-svg">
+          <use xlink:href="img/sprite/vector-sprite.svg#twitter"></use>
+        </svg></a></li>
+    <li class="social__item"><a class="social__link social__link-facebook" href="#">Facebook
+        <svg class="social__facebook-svg">
+          <use xlink:href="img/sprite/vector-sprite.svg#facebook"></use>
+        </svg></a></li>
+    <li class="social__item"><a class="social__link social__link-youtube" href="#">Youtube
+        <svg class="social__youtube-svg">
+          <use xlink:href="img/sprite/vector-sprite.svg#youtube"></use>
+        </svg></a></li>
+  </ul><a class="page-footer__developed-by" href="#">Разработано</a>
+</footer>
+    </div>
+    <script src="js/vendor/svgxuse.js"></script>
+  <script type="text/javascript" src="js/bundle.form.js"></script></body>
+</html>
