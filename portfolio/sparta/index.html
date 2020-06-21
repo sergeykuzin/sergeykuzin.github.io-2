@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ru" dir="ltr">
+<html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,11 +12,11 @@
   <body>
     <header class="page-header">
       <div class="container page-header__inner">
-        <div class="page-header__top"><a class="logo" href="#"></a><strong class="page-header__subtitle">Спецкурс</strong><a class="telephone" href="tel:+79304150252">+7 (930) 410 02 52</a></div>
+        <div class="page-header__top"><a class="logo" href="#">Логотип</a><strong class="page-header__subtitle">Спецкурс</strong><a class="telephone" href="tel:+79304150252">+7 (930) 410 02 52</a></div>
         <div class="page-header__bottom">
-          <h1 class="page-header__title"><span>Выжить</span><span>Любой ценой</span></h1>
+          <h1 class="page-header__title"><span>Выжить </span><span>Любой ценой</span></h1>
           <div class="timetable"><img src="img/page-header/timetable.png" alt="timetable"><span>3 дня с утра<br/>до вечера</span></div>
-          <button class="main-button" type="button" id="feedback-form">Рискнуть</button>
+          <button class="open-feedback-form-js main-button" type="button">Рискнуть</button>
         </div>
       </div>
     </header>
@@ -69,7 +69,7 @@
       </section>
       <section class="what-gives-our-course">
         <div class="what-gives-our-course-wrapper">
-          <h2 class="what-gives-our-course__title">Что даёт наш<br/>спецкурс</h2>
+          <h2 class="what-gives-our-course__title">Что даёт наш <br/>спецкурс</h2>
           <ul class="what-gives-our-course__list">
             <li class="what-gives-our-course__item"><strong class="what-gives-our-course__item-title">Базовые знания</strong>
               <p class="what-gives-our-course__item-description">
@@ -87,7 +87,7 @@
           </ul>
         </div>
         <div class="what-will-not-be">
-          <h3 class="what-will-not-be__title">Чего<br/>не будет</h3>
+          <h3 class="what-will-not-be__title">Чего <br/>не будет</h3>
           <ul class="what-will-not-be__list">
             <li class="what-will-not-be__item"><strong class="what-will-not-be__item-title">Нет скуке!</strong>
               <p class="what-will-not-be__item-description">
@@ -141,7 +141,7 @@
         </ul>
       </section>
       <section class="safety-in-city">
-        <h2 class="safety-in-city__title">Также курс включает в себя блок<br/>по безопасности в городе</h2>
+        <h2 class="safety-in-city__title">Также курс включает в себя блок <br/>по безопасности в городе</h2>
         <ul class="safety-in-city__list">
           <li class="safety-in-city__item">Как действовать во время пожара?</li>
           <li class="safety-in-city__item">Блок по автомобильной безопасности.</li>
@@ -154,9 +154,9 @@
         <div class="test-yourself__inner container">
           <div class="test-yourself__wrapper">
             <div class="test-yourself__text-wrapper">
-              <h2 class="test-yourself__title">Испытай</h2><span>себя <br/>на прочность</span>
+              <h2 class="test-yourself__title"><span class="test-yourself__title-first-word">Испытай </span><span>себя <br/>на прочность</span></h2>
             </div>
-            <button class="main-button" type="button" id="feedback-form">Рискнуть</button>
+            <button class="open-feedback-form-js main-button" type="button">Рискнуть</button>
           </div>
         </div>
       </section>
@@ -191,7 +191,7 @@
           </ul>
         </div>
         <div class="course-program__sign-up"><span class="course-program__sign-up-text">Записаться и</span>
-          <button class="main-button" type="button" id="feedback-form">Рискнуть</button>
+          <button class="open-feedback-form-js main-button" type="button">Рискнуть</button>
         </div>
       </section>
       <section class="photos">
@@ -226,9 +226,9 @@
         <div class="test-yourself__inner container">
           <div class="test-yourself__wrapper">
             <div class="test-yourself__text-wrapper">
-              <h2 class="test-yourself__title">Испытай</h2><span>себя <br/>на прочность</span>
+              <h2 class="test-yourself__title"><span class="test-yourself__title-first-word">Испытай </span><span>себя <br/>на прочность</span></h2>
             </div>
-            <button class="main-button" type="button" id="feedback-form">Рискнуть</button>
+            <button class="open-feedback-form-js main-button" type="button">Рискнуть</button>
           </div>
         </div>
       </section>
@@ -236,13 +236,13 @@
         <div class="container">
           <h2 class="testimonials__title">Отзывы</h2>
           <div class="video-player-wrapper">
-            <button class="video-player__play-button" type="button"></button>
+            <button class="video-player__play-button" type="button" aria-label="play-video"></button>
             <div class="player" style="display: none;" id="player"></div>
           </div>
           <div class="slider-wrapper">
-            <ul class="testimonials__list">
-              <li class="testimonials__item" data-slide-active="true">
-                <div class="testimonials__reviewer-photo"></div><span class="testimonials__item-reviewer-name">Дмитрий Весна</span>
+            <ul class="testimonials__list swiper-wrapper">
+              <li class="testimonials__item swiper-slide">
+                <div class="testimonials__reviewer-photo testimonials__reviewer-photo-001"></div><span class="testimonials__item-reviewer-name">Дмитрий Весна</span>
                 <p class="testimonials__item-reviewer-text">
                   Я, Выжил!!!! Такого треша в жизни у меня не было. Не думал даже, что
                   на такое способен в последнее время. Ни какое КМБ и прочее с этим не сравнится.
@@ -266,38 +266,40 @@
                   меры, правильно и быстро принимать решения и многое другое.
                   А самое главное найти в себе силы идти к цели, когда нет сил, хочется все
                   послать, сдаться. Открыть в себе не только второе дыхание, а пятое или десятое уже.
-                </p><span class="testimonials__toggle-text">Читать весь отзыв</span>
+                </p>
               </li>
-              <li class="testimonials__item">
-                <div class="testimonials__reviewer-photo"></div><span class="testimonials__item-reviewer-name">Дмитрий Весна 2222</span>
+              <li class="testimonials__item swiper-slide">
+                <div class="testimonials__reviewer-photo testimonials__reviewer-photo-002"></div><span class="testimonials__item-reviewer-name">Виталий Иванов </span>
                 <p class="testimonials__item-reviewer-text">
-                  А самое главное найти в себе силы идти к цели, когда нет сил, хочется все
-                  послать, сдаться. Открыть в себе не только второе дыхание, а пятое или десятое уже.
-                </p><span class="testimonials__toggle-text">Читать весь отзыв</span>
+                  Господа, огромная просьба к потенциальным участникам будущего похода: не нужно брать
+                  с собой ничего кроме спальника и коврика. А если ваш уровень минимального комфорта ниже
+                  плинтуса, то можете и это не брать. Если есть желание можно взять веревочки, гвоздики,
+                  булавочки и прочее прочее что может пригодиться. Но не обременяйте себя лишним шмотьем. Пожалуйста)
+                </p>
               </li>
-              <li class="testimonials__item">
-                <div class="testimonials__reviewer-photo"></div><span class="testimonials__item-reviewer-name">Дмитрий Весна 3333</span>
+              <li class="testimonials__item swiper-slide">
+                <div class="testimonials__reviewer-photo testimonials__reviewer-photo-003"></div><span class="testimonials__item-reviewer-name">Ольга Волкова </span>
                 <p class="testimonials__item-reviewer-text">
-                  А самое главное найти в себе силы идти к цели, когда нет сил, хочется все
-                  послать, сдаться. Открыть в себе не только второе дыхание, а пятое или десятое уже.
-                </p><span class="testimonials__toggle-text">Читать весь отзыв</span>
+                  Нормальный поход по дикой местности с элементами выживания: разведение костров разными способами,
+                  постройка укрытий, организация ловушек и силков, рыбная ловля на самодельную снасть, поедание
+                  подножного корма… и так далее. В общем, все то, чем деревенские парни развлекаются в детстве.
+                  У нас еще добавился скрытый проход мимо часовых и уход от Урала с автоматчиками, но это уже исключение из правил… =)
+                </p>
               </li>
-              <li class="testimonials__item">
-                <div class="testimonials__reviewer-photo"></div><span class="testimonials__item-reviewer-name">Дмитрий Весна 44444</span>
+              <li class="testimonials__item swiper-slide">
+                <div class="testimonials__reviewer-photo testimonials__reviewer-photo-004"></div><span class="testimonials__item-reviewer-name">Оксана Васильева </span>
                 <p class="testimonials__item-reviewer-text">
-                  А самое главное найти в себе силы идти к цели, когда нет сил, хочется все
-                  послать, сдаться. Открыть в себе не только второе дыхание, а пятое или десятое уже.
-                </p><span class="testimonials__toggle-text">Читать весь отзыв</span>
+                  Сходила. С первых моментов насторожило полное отсутствие запланированного маршрута. Идем туда незнамо
+                  куда. Как выяснилось позже идем впревые по этому направлению. Пройдя часок/ полтора встали выживать.
+                  Выживали преимущественно из ума. На удивление подобралась хорошая группа да и с погодой повезло, самое то
+                  для выживания. Место для (выживания из ума) подобрали на мой взгляд не ахти. Охотиться не на кого, с
+                  собирательством тоже не айс. К сожалению ничего нового кроме рецепта каши из бересты для себя не вынесла.
+                </p>
               </li>
             </ul>
             <div class="testimonials__pagination">
               <button class="testimonials__pagination-left" type="button"></button>
-              <ul class="testimonials__pagination-dots">
-                <li class="testimonials__pagination-dot testimonials__pagination-dot--active" data-dot-active="true"></li>
-                <li class="testimonials__pagination-dot"></li>
-                <li class="testimonials__pagination-dot"></li>
-                <li class="testimonials__pagination-dot"></li>
-              </ul>
+              <div class="testimonials__pagination-dots swiper-pagination"></div>
               <button class="testimonials__pagination-right" type="button"></button>
             </div>
           </div>
@@ -316,9 +318,9 @@
               Оставьте свой номер телефона, наши менеджеры
               с вами свяжутся и проконсультируют
             </p>
-            <form class="have-questions__form-wrapper" action="#">
-              <input class="have-questions__name" type="text" placeholder="Имя">
-              <input class="have-questions__phone" type="text" placeholder="Телефон">
+            <form class="have-questions__form-wrapper" action="#" onsubmit="alert('Отправлено'); return false">
+              <input class="have-questions__name" type="text" placeholder="Имя" name="name" aria-label="Имя" required>
+              <input class="have-questions__phone" type="text" placeholder="Телефон" name="phone" aria-label="Телефон" required>
               <button class="have-questions__send-button main-button" type="submit">Отправить</button>
             </form>
           </div>
@@ -334,9 +336,9 @@
            Оставь свой номер телефона, наши менеджеры свяжутся
           с тобой для подтверждения заявки</span>
         <form action="#">
-          <input type="text" placeholder="Имя" name="name">
-          <input type="text" placeholder="Телефон" name="phone">
-          <button class="main-button" type="submit">Отправить</button>
+          <input class="feedback-form__name" type="text" placeholder="Имя" name="name" required>
+          <input class="feedback-form__phone" type="text" placeholder="Телефон" name="phone" required>
+          <button class="main-button feedback-form__send-button" type="submit">Отправить</button>
         </form>
         <button class="feedback-form__close-button" type="button">Закрыть форму обратной связи</button>
       </div>
